@@ -1,4 +1,4 @@
-dax
+dax Spiders
 ===
 
-Distributed Automation for XNAT
+Spiders developed at Vanderbilt for DAX package (Distributed Automation for XNAT)
