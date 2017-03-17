@@ -1,5 +1,5 @@
-Welcome to DAX's documentation!
-===============================
+Welcome to DAX and Spider's documentation!
+==========================================
 
 Contents:
 
@@ -13,3 +13,4 @@ Contents:
    contributors
    how_to_contribute
    faq
+   news/spiders/NEWS
