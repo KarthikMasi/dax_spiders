@@ -24,14 +24,13 @@ Currently it reads Hitachi ETG-4000 format NIRS data files, which contain raw si
 Resources
 ---------
 
-| CORRECTED_HBDATA - Filtered oxy / deoxy / total Hb concentration data. Generally what will be wanted for future analysis
-| HBDATA - Unfiltered oxy / deoxy / total Hb data
-
-| OUTLOG - STDOUT and STDERR from the process on the grid
-| PBS - The DRMAA compliant batch script to run the job
-| PDF - The output PDF file for determining QA status
-| SNAPSHOTS - Thumbnail of the first page of the PDF for viewing on XNAT
-| MATLAB - Matlab script that was run
+- CORRECTED_HBDATA - Filtered oxy / deoxy / total Hb concentration data. Generally what will be wanted for future analysis
+- HBDATA - Unfiltered oxy / deoxy / total Hb data
+- OUTLOG - STDOUT and STDERR from the process on the grid
+- PBS - The DRMAA compliant batch script to run the job
+- PDF - The output PDF file for determining QA status
+- SNAPSHOTS - Thumbnail of the first page of the PDF for viewing on XNAT
+- MATLAB - Matlab script that was run
 
 References
 ----------
