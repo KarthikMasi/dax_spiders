@@ -19,7 +19,7 @@ To indicate whether important task- or stimulus-related signal was removed by th
 Requirements
 ------------
 
-Currently it reads Hitachi ETG-4000 format NIRS data files, specifically the `???_MES_???.csv` file that contain raw signals from two wavelengths at each channel.
+Currently it reads Hitachi ETG-4000 format NIRS data files, specifically the `???_MES_ProbeN.csv` file that contain raw signals from two wavelengths at each channel.
 
 Resources
 ---------
