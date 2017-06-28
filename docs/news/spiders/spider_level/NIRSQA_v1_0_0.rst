@@ -8,7 +8,7 @@ The NIRSQA spider provides initial filtering and some quality metrics for near-i
 
 A data quality metric is provided for each channel following the method described by Pollonini et al (2014). A 0.5 Hz to 2.5 Hz bandpass filter is applied to the raw channel data to isolate the cardiac frequency range, and the correlation between the two wavelengths is computed. This metric, called the scalp coupling index, ranges from -1 to 1, and higher values putatively indicate channels with more reliable signal.
 
-Data are converted to relative oxygenated, deoxygenated, and total hemoglobin concentration measurements using the mes2hb function from the NIRS_SPM matlab toolbox [Ye2009]_, <https://www.nitrc.org/projects/nirs_spm/>). 
+Data are converted to relative oxygenated, deoxygenated, and total hemoglobin concentration measurements using the mes2hb function from the NIRS_SPM matlab toolbox [Ye2009]_, https://www.nitrc.org/projects/nirs_spm/). 
 
 The oxy, deoxy, and total signals are downsampled by a factor of 10 (generally from 10 Hz to 1 Hz) after low pass filtering with cutoff frequency of 0.8 times the Nyquist frequency of the downsampled data. For typical data this step removes frequencies above about 0.4 Hz, which are expected to be noise or signals of no interest, and reduces the size of the data for faster processing later.
 
