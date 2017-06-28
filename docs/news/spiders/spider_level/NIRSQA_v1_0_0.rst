@@ -16,13 +16,15 @@ To remove abrupt transitions in the time series that are characteristic of quick
 
 To indicate whether important task- or stimulus-related signal was removed by the spline filter, it is also applied to the regressors created from the task or stimulus timing marks in the data file and presented for each channel along with the amount of variance retained.
 
-Requirements
-------------
 
-Currently it reads Hitachi ETG-4000 format NIRS data files, specifically the `???_MES_ProbeN.csv` file that contain raw signals from two wavelengths at each channel.
+Input requirements
+------------------
 
-Resources
----------
+Currently it reads Hitachi ETG-4000 format NIRS data files, specifically the `???_MES_ProbeN.csv` file that contain raw signals from two wavelengths at each channel. This is typically from the ETG4000 resource of a NIRS scan in an HD Session.
+
+
+Output resources
+----------------
 
 - CORRECTED_HBDATA - Filtered oxy / deoxy / total Hb concentration data. This is generally what will be wanted for future analysis.
 - HBDATA - Unfiltered oxy / deoxy / total Hb data.
@@ -31,6 +33,7 @@ Resources
 - PDF - The output PDF file for determining QA status.
 - SNAPSHOTS - Thumbnail of the first page of the PDF for viewing on XNAT.
 - MATLAB - Matlab script that was run.
+
 
 References
 ----------
@@ -43,11 +46,16 @@ References
 
 .. [Ye2009] Ye JC, Tak S, Jang KE, Jung J, Jang J. NIRS-SPM: statistical parametric mapping for near-infrared spectroscopy. Neuroimage. 2009 Jan 15;44(2):428-47. doi: 10.1016/j.neuroimage.2008.08.036. Epub 2008 Sep 12. PubMed PMID: 18848897.
 
+
 Version History
 ---------------
- 
+Last changed revision for current valid version::
+   masimatlab/trunk/xnatspiders/matlab/QA_NIRS                   r6166
+   masimatlab/trunk/xnatspiders/spiders/Spider_NIRSQA_v1_0_0.py  r3699
+   masimatlab/trunk/xnatspiders/processors/nirsqa_processor.py   r3766
+   
+
 Current Contact Person
 ----------------------
-
 2017-06-28 Baxter Rogers baxter.rogers@vanderbilt.edu
 	
