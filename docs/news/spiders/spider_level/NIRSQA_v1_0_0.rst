@@ -49,7 +49,7 @@ References
 
 Version History
 ---------------
-Last changed revision for current valid version::
+Last changed revision for current valid version:
    masimatlab/trunk/xnatspiders/matlab/QA_NIRS                   r6166
    masimatlab/trunk/xnatspiders/spiders/Spider_NIRSQA_v1_0_0.py  r3699
    masimatlab/trunk/xnatspiders/processors/nirsqa_processor.py   r3766
