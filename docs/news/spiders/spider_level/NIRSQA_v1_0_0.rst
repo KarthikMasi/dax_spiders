@@ -1,7 +1,8 @@
 NIRSQA_v1_0_0
 =============
 
-* **What does it do?**
+What does it do?
+----------------
 
 The NIRSQA spider provides initial filtering and some quality metrics for near-infrared optical topography data.
 
@@ -15,11 +16,14 @@ To remove abrupt transitions in the time series that are characteristic of quick
 
 To indicate whether important task- or stimulus-related signal was removed by the spline filter, it is also applied to the regressors created from the task or stimulus timing marks in the data file and presented for each channel along with the amount of variance retained.
 
-* **Requirements**
+Requirements
+------------
 
 Currently it reads Hitachi ETG-4000 format NIRS data files, which contain raw signals from two wavelengths at each channel.
 
-* **Resources**
+Resources
+---------
+
 | OUTLOG - STDOUT and STDERR from the process on the grid
 | PBS - The DRMAA compliant batch script to run the job
 | PDF - The output PDF file for determining QA status
@@ -28,7 +32,8 @@ Currently it reads Hitachi ETG-4000 format NIRS data files, which contain raw si
 | HBDATA - Unfiltered oxy / deoxy / total Hb data
 | MATLAB - Matlab script that was run
 
-* **References**
+References
+----------
 
 Cooper RJ, Selb J, Gagnon L, Phillip D, Schytz HW, Iversen HK, Ashina M, Boas DA. A systematic comparison of motion artifact correction techniques for functional near-infrared spectroscopy. Front Neurosci. 2012 Oct 11;6:147. doi: 10.3389/fnins.2012.00147. eCollection 2012. PubMed PMID: 23087603; PubMed Central PMCID: PMC3468891.
 
@@ -38,13 +43,12 @@ Scholkmann F, Spichtig S, Muehlemann T, Wolf M. How to detect and reduce movemen
 
 [Ye2009] Ye JC, Tak S, Jang KE, Jung J, Jang J. NIRS-SPM: statistical parametric mapping for near-infrared spectroscopy. Neuroimage. 2009 Jan 15;44(2):428-47. doi: 10.1016/j.neuroimage.2008.08.036. Epub 2008 Sep 12. PubMed PMID: 18848897.
 
-* **Version History**
-<revision> <name> <date> <lines changed>
-
-r3699 | damons | 2015-10-29 10:18:00 -0500 (Thu, 29 Oct 2015) | 1 line
-	nirs qa spider for baxter
+Version History
+---------------
 
  
-**Current Contact Person**
+Current Contact Person
+----------------------
+
 2017-06-28 Baxter Rogers baxter.rogers@vanderbilt.edu
 	
