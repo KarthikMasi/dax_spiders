@@ -8,7 +8,7 @@ The NIRSQA spider provides initial filtering and some quality metrics for near-i
 
 A data quality metric is provided for each channel following the method described by Pollonini et al (2014). A 0.5 Hz to 2.5 Hz bandpass filter is applied to the raw channel data to isolate the cardiac frequency range, and the correlation between the two wavelengths is computed. This metric, called the scalp coupling index, ranges from -1 to 1, and higher values putatively indicate channels with more reliable signal.
 
-Data are converted to relative oxygenated, deoxygenated, and total hemoglobin concentration measurements using the mes2hb function from the NIRS_SPM matlab toolbox [Ye2009]_, https://www.nitrc.org/projects/nirs_spm/). 
+Data are converted to relative oxygenated, deoxygenated, and total hemoglobin concentration measurements using the mes2hb function from the NIRS_SPM matlab toolbox [Ye2009]_, <https://www.nitrc.org/projects/nirs_spm/>). 
 
 The oxy, deoxy, and total signals are downsampled by a factor of 10 (generally from 10 Hz to 1 Hz) after low pass filtering with cutoff frequency of 0.8 times the Nyquist frequency of the downsampled data. For typical data this step removes frequencies above about 0.4 Hz, which are expected to be noise or signals of no interest, and reduces the size of the data for faster processing later.
 
@@ -24,13 +24,13 @@ Currently it reads Hitachi ETG-4000 format NIRS data files, which contain raw si
 Resources
 ---------
 
-- CORRECTED_HBDATA - Filtered oxy / deoxy / total Hb concentration data. Generally what will be wanted for future analysis
-- HBDATA - Unfiltered oxy / deoxy / total Hb data
-- OUTLOG - STDOUT and STDERR from the process on the grid
-- PBS - The DRMAA compliant batch script to run the job
-- PDF - The output PDF file for determining QA status
-- SNAPSHOTS - Thumbnail of the first page of the PDF for viewing on XNAT
-- MATLAB - Matlab script that was run
+- CORRECTED_HBDATA - Filtered oxy / deoxy / total Hb concentration data. This is generally what will be wanted for future analysis.
+- HBDATA - Unfiltered oxy / deoxy / total Hb data.
+- OUTLOG - STDOUT and STDERR from the process on the grid.
+- PBS - The DRMAA compliant batch script to run the job.
+- PDF - The output PDF file for determining QA status.
+- SNAPSHOTS - Thumbnail of the first page of the PDF for viewing on XNAT.
+- MATLAB - Matlab script that was run.
 
 References
 ----------
@@ -41,7 +41,7 @@ Pollonini L, Olds C, Abaya H, Bortfeld H, Beauchamp MS, Oghalai JS. Auditory cor
 
 Scholkmann F, Spichtig S, Muehlemann T, Wolf M. How to detect and reduce movement artifacts in near-infrared imaging using moving standard deviation and spline interpolation. Physiol Meas. 2010 May;31(5):649-62. doi: 10.1088/0967-3334/31/5/004. Epub 2010 Mar 22. PubMed PMID: 20308772.
 
-[Ye2009] Ye JC, Tak S, Jang KE, Jung J, Jang J. NIRS-SPM: statistical parametric mapping for near-infrared spectroscopy. Neuroimage. 2009 Jan 15;44(2):428-47. doi: 10.1016/j.neuroimage.2008.08.036. Epub 2008 Sep 12. PubMed PMID: 18848897.
+.. [Ye2009] Ye JC, Tak S, Jang KE, Jung J, Jang J. NIRS-SPM: statistical parametric mapping for near-infrared spectroscopy. Neuroimage. 2009 Jan 15;44(2):428-47. doi: 10.1016/j.neuroimage.2008.08.036. Epub 2008 Sep 12. PubMed PMID: 18848897.
 
 Version History
 ---------------
